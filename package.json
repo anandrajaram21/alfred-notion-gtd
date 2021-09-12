@@ -1,0 +1,24 @@
+{
+  "name": "alfred-notion",
+  "version": "1.0.0",
+  "description": "An alfred workflow to quickly add tasks into Notion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/anandrajaram21/alfred-notion.git"
+  },
+  "author": "Anand Rajaram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anandrajaram21/alfred-notion/issues"
+  },
+  "homepage": "https://github.com/anandrajaram21/alfred-notion#readme",
+  "dependencies": {
+    "@notionhq/client": "^0.3.2",
+    "alfy": "^0.12.1"
+  },
+  "type": "module"
+}
