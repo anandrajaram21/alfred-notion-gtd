@@ -81,6 +81,13 @@
 			<integer>180</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>NOTION_TOKEN</key>
+		<string>&lt;your notion integration token&gt;</string>
+	</dict>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
 	<string>https://anandrajaram.dev</string>
 </dict>
