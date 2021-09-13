@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>com.alfredapp.notion</string>
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict/>
 	<key>createdby</key>
-	<string></string>
+	<string>Anand Rajaram</string>
 	<key>description</key>
 	<string>An Alfred workflow to quickly add tasks to Notion</string>
 	<key>disabled</key>
@@ -34,7 +34,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>not</string>
+				<string>nta</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -44,7 +44,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Please Wait</string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js "$1"
 </string>
@@ -53,9 +53,9 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>Something like "Finish making alfred workflow"</string>
 				<key>title</key>
-				<string></string>
+				<string>Enter your task</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -82,6 +82,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://anandrajaram.dev</string>
 </dict>
 </plist>
