@@ -19,3 +19,11 @@ To run this project, you will need to add the following environment variables to
 ## Usage/Examples
 
 Will be updated once the development is complete
+
+## Tech Stack
+
+This app will be built using the following technologies:
+
+- [Alfy](https://github.com/sindresorhus/alfy) - To make the Alfred workflow
+- [Notion API](https://github.com/makenotion/notion-sdk-js) - To add rows to the database
+- [Chrono](https://github.com/wanasit/chrono) - Natural Language Dates to add due dates for tasks
