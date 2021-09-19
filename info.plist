@@ -7,7 +7,23 @@
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>05CCF908-66B0-406D-8A1C-7C71603CA4F8</key>
+		<array/>
+		<key>AD7A029E-AF29-4609-AED5-CEFBE2215643</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>05CCF908-66B0-406D-8A1C-7C71603CA4F8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Anand Rajaram</string>
 	<key>description</key>
@@ -40,7 +56,7 @@
 				<key>queuedelayimmediatelyinitially</key>
 				<true/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
@@ -53,7 +69,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Something like "Finish making alfred workflow"</string>
+				<string></string>
 				<key>title</key>
 				<string>Enter your task</string>
 				<key>type</key>
@@ -68,11 +84,41 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node notion.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>05CCF908-66B0-406D-8A1C-7C71603CA4F8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>05CCF908-66B0-406D-8A1C-7C71603CA4F8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>320</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
 		<key>AD7A029E-AF29-4609-AED5-CEFBE2215643</key>
 		<dict>
 			<key>xpos</key>
@@ -81,6 +127,8 @@
 			<integer>180</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
 	<string>https://anandrajaram.dev</string>
 </dict>

@@ -1,14 +1,11 @@
-import alfy from 'alfy';
+import alfy from "alfy";
 
-const data = await alfy.fetch('https://jsonplaceholder.typicode.com/posts');
+const input = alfy.input;
 
-const items = alfy
-	.inputMatches(data, 'title')
-	.map(element => ({
-		title: element.title,
-		subtitle: element.body,
-		arg: element.id
-	}));
-
-alfy.output(items);
-
+alfy.output([
+  {
+    title: `Add Task "${input}" to your Tasks Database`,
+    subtitle: "Add Now",
+    arg: input,
+  },
+]);
