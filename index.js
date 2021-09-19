@@ -1,29 +1,49 @@
+import * as chrono from "chrono-node";
 import alfy from "alfy";
 import { Client } from "@notionhq/client";
 import dotenv from "dotenv";
+import alfredNotifier from "alfred-notifier";
 
+alfredNotifier();
 dotenv.config();
 
 const client = new Client({
   auth: process.env.NOTION_TOKEN,
 });
 
-alfy.output([
-  {
-    title: process.env.NOTION_TOKEN,
-    subtitle: "Your Notion Token",
-    arg: "1",
-  },
-]);
+const { DATABASE_ID, TABLE_NAME, DATE_NAME } = process.env;
 
-// const data = await alfy.fetch("https://jsonplaceholder.typicode.com/posts");
+async function createTask(
+  notionClient,
+  taskName,
+  databaseId,
+  tableTaskName,
+  tableDateName
+) {
+  const response = await notionClient.pages.create({
+    parent: {
+      database_id: databaseId,
+    },
+    properties: {
+      [tableTaskName]: {
+        title: [
+          {
+            text: {
+              content: taskName,
+            },
+          },
+        ],
+      },
+      [tableDateName]: {
+        date: {
+          start: chrono.parseDate(taskName).toISOString(),
+        },
+      },
+    },
+  });
+  return "Done";
+}
 
-// const items = alfy.inputMatches(data, "title").map((element) => ({
-// title: element.title,
-// subtitle: element.body,
-// arg: element.id,
-// }));
+console.log(alfy.input);
 
-// console.log(items);
-
-// alfy.output(items);
+createTask(client, alfy.input, DATABASE_ID, TASK_NAME, DATE_NAME);
