@@ -1,6 +1,6 @@
 # Alfred Workflow for Notion
 
-This is a simple Alfred workflow for Notion to quickly and easily add tasks to your "Inbox" on Notion, so as to reduce the time you take to get an idea from your head, into Notion.
+This is a simple Alfred workflow for Notion to quickly and easily add tasks/ideas to your "Inbox" on Notion, so as to reduce the time you take to do so. This prevents some laziness, and massively cuts down on the time taken to note down your ideas/tasks, thereby preventing you from forgetting to take action on them.
 
 This workflow is built around the template used in [this](https://www.youtube.com/watch?v=r6hUkChpwWQ) video
 
