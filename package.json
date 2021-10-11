@@ -1,10 +1,9 @@
 {
-  "name": "alfred-notion",
+  "name": "alfred-notion-gtd",
   "version": "1.0.0",
   "description": "An Alfred workflow to quickly dump your tasks/ideas into Notion, thereby preventing you from having to do a lot of work to add one more row to your Notion Database.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
