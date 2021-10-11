@@ -24,10 +24,6 @@
         </dict>
       </array>
     </dict>
-    <key>createdby</key>
-    <string>Anand Rajaram</string>
-    <key>description</key>
-    <string>An Alfred workflow to quickly add tasks to Notion</string>
     <key>disabled</key>
     <false/>
     <key>name</key>
@@ -129,7 +125,5 @@
     </dict>
     <key>version</key>
     <string/>
-    <key>webaddress</key>
-    <string>https://anandrajaram.dev</string>
   </dict>
 </plist>
