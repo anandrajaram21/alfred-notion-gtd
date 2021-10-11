@@ -17,6 +17,7 @@ async function createTask(
   tableTaskName,
   tableDateName
 ) {
+  const taskDate = chrono.parseDate(taskName);
   const response = await notionClient.pages.create({
     parent: {
       database_id: databaseId,
@@ -31,11 +32,13 @@ async function createTask(
           },
         ],
       },
-      [tableDateName]: {
-        date: {
-          start: chrono.parseDate(taskName).toISOString(),
+      ...(taskDate && {
+        [tableDateName]: {
+          date: {
+            start: chrono.parseDate(taskName).toISOString(),
+          },
         },
-      },
+      }),
     },
   });
   return "Done";
