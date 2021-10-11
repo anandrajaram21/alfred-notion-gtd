@@ -16,6 +16,10 @@ To run this project, you will need to add the following environment variables to
 
 `DATABASE_ID` - The database ID where you store all your tasks. Learn how to find the database ID of your Notion database [here](https://stackoverflow.com/questions/67728038/where-to-find-database-id-for-my-database-in-notion). Paste the database ID in the following format: `DATABASE_ID="your notion db id"`
 
+`TASK_NAME` - The name of the property of the task name in your table. For e.g: `TASK_NAME="Task Name"`
+
+`DATE_NAME` - The name of the property of the due date in your table. For e.g: `DATE_NAME="Due Date"`
+
 ## Usage/Examples
 
 Will be updated once the development is complete
