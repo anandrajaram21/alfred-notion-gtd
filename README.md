@@ -6,11 +6,15 @@ This workflow is built around the template used in [this](https://www.youtube.co
 
 ## Installation
 
-npm package will be released soon, on completion of development, to make installation as easy as possible.
+You can now install the package using one simple command:
+
+```
+npm install -g alfred-notion-gtd
+```
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to a .env file.
+To run this project, you will need to edit the environment variables in the Alfred workflow preferences.
 
 `NOTION_TOKEN` - Your Notion integration token. Create a Notion integration [here](https://www.notion.so/my-integrations) and paste the internal integration token here in the following format: `NOTION_TOKEN="your secret goes here"`
 

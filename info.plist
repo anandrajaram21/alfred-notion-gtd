@@ -123,6 +123,17 @@
 			<integer>180</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>DATABASE_ID</key>
+		<string>&lt;your_notion_database_id&gt;</string>
+		<key>DATE_NAME</key>
+		<string>&lt;your_notion_table_date_property_name&gt;</string>
+		<key>NOTION_TOKEN</key>
+		<string>&lt;your_notion_token_here&gt;</string>
+		<key>TASK_NAME</key>
+		<string>&lt;your_notion_table_task_property_name&gt;</string>
+	</dict>
 	<key>version</key>
 	<string></string>
 </dict>
