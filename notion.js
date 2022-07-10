@@ -10,6 +10,18 @@ const client = new Client({
 
 const { DATABASE_ID, TASK_NAME, DATE_NAME } = process.env;
 
+const sliceDateFromTaskName = (name) => {
+  const result = chrono.parse(name)[0]
+
+  if (result) {
+    const startIndex = result.index - 1
+    const endIndex = result.index + result.text.length
+    const sliciedTaskName = name.slice(0, startIndex) + name.slice(endIndex)
+    return sliciedTaskName
+  }
+  return name
+}
+
 async function createTask(
   notionClient,
   taskName,
@@ -17,7 +29,11 @@ async function createTask(
   tableTaskName,
   tableDateName
 ) {
+
   const taskDate = chrono.parseDate(taskName);
+
+  const sliciedTaskName = sliceDateFromTaskName(taskName)
+
   const response = await notionClient.pages.create({
     parent: {
       database_id: databaseId,
@@ -27,7 +43,7 @@ async function createTask(
         title: [
           {
             text: {
-              content: taskName,
+              content: sliciedTaskName,
             },
           },
         ],
